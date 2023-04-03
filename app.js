@@ -46,7 +46,7 @@ projects.forEach((card, index) => {
 
 // project filter function
 
-const tags = document.querySelectorAll('.filter .btn');
+const tags = document.querySelectorAll('.project__filter .button');
 
 tags.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -62,7 +62,7 @@ tags.forEach(btn => {
             }
         })
 
-        tags.forEach(item => item.classList.remove('active'))
-        btn.classList.add('active')
+        tags.forEach(item => item.classList.remove('button__state_active'))
+        btn.classList.add('button__state_active')
     })
 })
