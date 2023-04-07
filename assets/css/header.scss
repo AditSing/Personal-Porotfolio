@@ -1,0 +1,90 @@
+/* header */
+
+.header {
+    width: 90%;
+    height: 100vh;
+    padding: 0 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.header__content {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.header__text {
+    margin-bottom: 20px;
+}
+
+.header__text .header__brand_name {
+    display: block;
+    text-transform: capitalize;
+    font-size: 5rem;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.header__brand_name span {
+    color: #9f5264;
+}
+
+.header__image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header__image {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/* table view */
+
+@media (max-width: 1060px) {
+
+    .header__text .header__brand_name {
+        font-size: 4rem;
+    }
+
+    .header__image {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+
+/* small screen */
+@media (max-width: 750px) {
+    .header {
+        height: auto;
+        padding: 100px 5vw;
+        flex-direction: column-reverse;
+        gap: 100px;
+    }
+
+    .header__content {
+        text-align: center;
+    }
+
+    .component__circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .header__image {
+        width: 300px;
+        height: 300px;
+    }
+}

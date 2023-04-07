@@ -1,0 +1,18 @@
+@import "reset.scss";
+@import "navbar.scss";
+@import "header.scss";
+@import "about.scss";
+@import "timeline.scss";
+@import "skill.scss";
+@import "contact.scss";
+@import "project.scss";
+@import "component/custom_component.scss";
+@import "component/button.scss";
+
+.heading {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 100px;
+}

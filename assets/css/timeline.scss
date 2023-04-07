@@ -1,0 +1,146 @@
+
+/* timeline */
+.timeline-container {
+    width: 100%;
+    position: relative;
+}
+
+.card-container {
+    padding: 0 10%;
+    margin-top: -158px;
+}
+
+.card-container:nth-child(even) .card {
+    margin-left: auto;
+}
+
+.card-container:nth-child(1) .card {
+    margin-top: 200px;
+    background-color: #fe6666;
+}
+
+.card-container:nth-child(2) .card {
+    background-color: #ffa654;
+}
+
+.card-container:nth-child(3) .card {
+    background-color: #18bfa1;
+}
+
+.card-container:nth-child(4) .card {
+    background-color: #33c0df;
+}
+
+.card-container:nth-child(5) .card {
+    background-color: #cb3bb4;
+}
+
+.card {
+    display: block;
+    width: 45%;
+    min-height: 200px;
+    min-width: 300px;
+    background: #f1f1f1;
+    color: #fff;
+    border: 1px solid #fcfcfc;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card-title {
+    font-weight: 300;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+}
+
+.card-body {
+    padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+.card-container:nth-child(odd) .card::after {
+    content: '';
+    position: absolute;
+    height: 120%;
+    right: -11%;
+    top: 50%;
+    border-right: 2px dashed #9f5264;
+    transform: translateY(-50%);
+}
+
+.card-container .card::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: -7.5%;
+    top: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    border: 3px solid #9f5264;
+}
+
+.card-container:nth-child(even) .card::before {
+    left: -6%;
+}
+
+
+/* table view */
+
+@media (max-width: 1060px) {
+    .image-container {
+        width: 320px;
+    }
+
+    /* timeline */
+    .card-container {
+        margin-top: 20px !important;
+    }
+
+    .card {
+        width: 70%;
+        margin: auto;
+    }
+
+    .card-container .card::before {
+        display: none;
+    }
+
+    .card-container .card::after {
+        right: 50% !important;
+        z-index: -1;
+    }
+}
+
+
+/* small screen */
+@media (max-width: 750px) {
+    /* timeline */
+    .card-container {
+        padding: 0px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .project-wrapper {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .project-card.active .project-thumbnail {
+        width: 300px;
+        height: 200px;
+    }
+
+    .project-card.active .project-body {
+        height: auto;
+        width: 300px;
+    }
+
+
+}

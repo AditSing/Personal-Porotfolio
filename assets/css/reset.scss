@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: auto;
+    width: 100%;
+    position: relative;
+    background-color: #fcfcfc;
+    font-family: 'Roboto', sans-serif;
+}
+
+::selection{
+    background: #95f26430;
+}
+
+@media (max-width: 1060px) {
+    html {
+        font-size: 15px;
+    }
+}
